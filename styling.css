@@ -1,4 +1,4 @@
-/* Palette
+/* Website Palette
 - #E27D60 Darker Orange
 - #E8A87C Lighter Orange
 - #84CDCA Lighter Blue
@@ -6,88 +6,52 @@
 - #C38D9E Pinkish
 */
 
-/* Navigation Bar */
-.navigation {
-    /* Visuals */
-    border-bottom-width: 5px;
-    background-color: #E8A87C;
-    border-bottom-color: #E27D60;
-    border-bottom-style: solid;
-    z-index: 1;
-
-    /* Position */
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    /* Size */
-    width: 100vw;
-}
-
-/* Navigation Bar List */
-.navigation ul {
-    /* Visuals */
-    list-style-type: none;
-    
-    /* Spacing */
-    margin: 0;
-    padding: 0;
-}
-
-/* Navigation Bar List Item */
-.navigation li {
-    /* Visuals */
-    display: block;
-    text-align: center;
-
-    /* Position */
-    float: left;
-    
-    /* Spacing */
-    padding: 8px;
-}
-
-/* Navigation Bar Links */
-.navigation a {
-    /* Visuals */
-    text-decoration: none;
-}
-
-/* Navigation Bar Borders */
-.border {
-    /* Visuals */
-    border-left-color: #E27D60;
-    border-left-style: solid;
-    border-left-width: 3px;
-
-    /* Position */
-    top: 10%;
-    bottom: 10%;
-    position: absolute;
-
-    /* Padding */
-    padding-right: 3px;
-}
-
-/* Navigation Bar Heading */
-.navigation h1 {
-    /* Visuals */
-    font-size: 5vh;
-    font-family: 'Lobster';
-    color: white;
-
-    /* Spacing */
-    margin: 0;
-}
-
-/* Navigation Bar Heading on Hover */
-.navigation h1:hover {
-    /* Visuals */
-    background-color: #E27D60;
-}
+/* Auburn Palette
+- #000080 Navy Blue
+- #CC5500 Burnt Orange
+*/
 
 /* Body */
 body {
     /* Visuals */
     background-color: #84CDCA;
+    text-align: center;
+    font-family: 'Roboto';
+    /* Spacing */
+    margin: 0;
+}
+
+/* Title Section */
+.title-section {
+    /* Visuals */
+    background-image: url(images/Auburn.jpg);
+    background-repeat: no-repeat;
+
+    /* Size */
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+/* Title section header */
+.title-section h1 {
+    /* Visuals */
+    color: #000080;
+    font-size: 75px;
+    background-color: #CC5500;
+    border-radius: 15px;
+    border-color: black;
+    border: solid;
+    border-width: 10px;
+
+    /* Position */
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    /* Spacing */
+    margin: 0;
+    padding: 15px;
 }
