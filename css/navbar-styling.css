@@ -2,8 +2,8 @@
 .navigation {
     /* Visuals */
     border-bottom-width: 5px;
-    background-color: #E8A87C;
-    border-bottom-color: #E27D60;
+    background-color: #fc7a00;
+    border-bottom-color: #f85e06;
     border-bottom-style: solid;
     z-index: 1;
 
@@ -48,7 +48,7 @@
 /* Navigation Bar Borders */
 .border {
     /* Visuals */
-    border-left-color: #E27D60;
+    border-left-color: #f85e06;
     border-left-style: solid;
     border-left-width: 3px;
 
@@ -74,5 +74,5 @@
 /* Navigation Bar Heading on Hover */
 .navigation h1:hover {
     /* Visuals */
-    background-color: #E27D60;
+    background-color: #f85e06;
 }
