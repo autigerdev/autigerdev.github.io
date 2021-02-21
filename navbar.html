@@ -1,39 +1,20 @@
 <!-- Navigation Bar -->
-<div class="navigation">
-    <ul>
-        <!-- Home -->
-        <li>
-            <a href="index.html"><h1>TigerDev</h1></a>
+<nav>
+    <div class="nav-wrapper blue-grey darken-2">
+      <a href="index.html" class="brand-logo left">TIGERDEV</a>
+      <ul id="nav-mobile" class="right">
+        <li> <!-- Dropdown Trigger -->
+            <a class='dropdown-trigger btn blue-grey darken-4' href='#' data-target='dropdown1'>About</a>
+            <!-- Dropdown Structure -->
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="#!">Who we are</a></li>
+              <li><a href="#!">Contact Us</a></li>
+              <li><a href="#!">Alumni Stories</a></li>
+            </ul>
         </li>
-
-        <!-- Border -->
-        <li>
-            <div class="border"></div>
-        </li>
-
-        <!-- About Us -->
-        <li>
-            <a href="about-us.html"><h1>About Us</h1></a>
-        </li>
-
-        <!-- Border -->
-        <li>
-            <div class="border"></div>
-        </li>
-
-        <!-- Projects -->
-        <li>
-            <a href="projects.html"><h1>Projects</h1></a>
-        </li>
-
-        <!-- Border -->
-        <li>
-            <div class="border"></div>
-        </li>
-
-        <!-- Resources -->
-        <li>
-            <a href="resources.html"><h1>Resources</h1></a>
-        </li>
-    </ul>
-</div>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+  </nav>
