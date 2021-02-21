@@ -1,40 +1,45 @@
 <!-- Navigation Bar -->
-<nav style="text-transform: uppercase;">
-    <div class="nav-wrapper blue-grey darken-2">
-        <a href="index.html" class="brand-logo left">TIGERDEV</a>
-        <ul id="nav-mobile" class="right">
-            <li>
-                <a class='dropdown-trigger btn blue-grey darken-4' href='#' data-target='DDabout'>About us</a>
-                <ul id='DDabout' class='dropdown-content'>
-                    <li><a href="about-us.html">Who we are</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                    <li><a href="alumni.html">Alumni Stories</a></li>
-                </ul>
-            </li>
-            <li>
-                <a class='dropdown-trigger btn blue-grey darken-4' href='#' data-target='DDprojects'>Projects</a>
-                <ul id='DDprojects' class='dropdown-content'>
-                    <li><a href="projectarchive.html">Past Projects</a></li>
-                    <li><a href="projects.html">Current Projects</a></li>
-                    <li><a href="demos.html">Playable Projects</a></li>
-                </ul>
-            </li>
-            <li>
-                <a class='dropdown-trigger btn blue-grey darken-4' href='#' data-target='DDinvolved'>Get Involved</a>
-                <ul id='DDinvolved' class='dropdown-content'>
-                    <li><a href="calendar.html">Calendar & Events</a></li>
-                    <li><a href="join.html">Join Us</a></li>
-                    <li><a href="resources.html">Club Resources</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <script type="text/javascript">
-        //Initialize dropdowns with options
-        $('.dropdown-trigger').dropdown({
-            'closeOnClick': true,
-            'hover': true,
-            'coverTrigger': false,
-        });
-    </script>
-</nav>
+<div class="navbar-fixed">
+    <nav style="text-transform: uppercase;">
+        <div class="nav-wrapper blue-grey darken-2">
+            <a href="index.html" class="brand-logo left" style="text-align:left; font-size: 40px;">TIGERDEV</a>
+            <ul id="nav-mobile" class="right">
+                <li>
+                    <a class='dropdown-trigger btn blue-grey darken-4' href='#' style="font-size: 24px;" data-target='DDabout'>About us</a>
+                    <ul id='DDabout' class='dropdown-content'>
+                        <li><a class="black-text" style="font-size: 10px;" href="about-us.html" >Who we are</a></li>
+                        <li><a class="black-text" style="font-size: 10px;" href="contact-us.html">Contact Us</a></li>
+                        <li><a class="black-text" style="font-size: 10px;" href="alumni.html">Alumni Stories</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class='dropdown-trigger btn blue-grey darken-4' href='#' style="font-size: 24px;" data-target='DDprojects'>Projects</a>
+                    <ul id='DDprojects' class='dropdown-content' style="font-size: 8px;">
+                        <li><a class="black-text" style="font-size: 10px;" href="projectarchive.html">Past Projects</a></li>
+                        <li><a class="black-text" style="font-size: 10px;" href="projects.html">Current Projects</a></li>
+                        <li><a class="black-text" style="font-size: 10px;" href="demos.html">Playable Projects</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class='dropdown-trigger btn blue-grey darken-4' href='#' style="font-size: 24px;" data-target='DDinvolved'>Get Involved</a>
+                    <ul id='DDinvolved' class='dropdown-content'>
+                        <li><a class="black-text" style="font-size: 10px;" href="calendar.html">Calendar & Events</a></li>
+                        <li><a class="black-text" style="font-size: 10px;" href="#" style=>Join Us</a></li>
+                        <li><a class="black-text" style="font-size: 10px;" href="resources.html">Club Resources</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+
+<script type="text/javascript">
+    //Initialize dropdowns with options
+    $('.dropdown-trigger').dropdown({
+        'closeOnClick': true,
+        'hover': true,
+        'coverTrigger': false,
+    });
+</script>
