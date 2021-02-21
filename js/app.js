@@ -1,7 +1,6 @@
 $(function() {
   $("#navbar").load("navbar.html");
 });
-$('.dropdown-trigger').dropdown();
 
 document.addEventListener('DOMContentLoaded', function() {
   var calendarEl = document.getElementById('calendar');
@@ -10,3 +9,16 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   calendar.render();
 });
+
+var calendar = new FullCalendar.Calendar(calendarEl, {
+  // no plugin config required!
+});
+
+/*
+let calendar = new Calendar(calendarEl, {
+  plugins: [ googleCalendarPlugin ],
+  googleCalendarApiKey: 'AIzaSyBemkF42lYGOymDhUcJl9HOThR-BMEi8WU',
+  events: {
+    googleCalendarId: 'autigerdev@gmail.com'
+  }
+});*/
