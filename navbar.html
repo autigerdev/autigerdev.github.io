@@ -2,18 +2,22 @@
 <div class="navbar-fixed">
     <nav style="text-transform: uppercase;">
         <div class="nav-wrapper blue-grey darken-2">
-            <a href="index.html" class="brand-logo left" style="text-align:left; font-size: 40px; left:0.5rem;">TIGERDEV</a>
-            <ul id="nav-mobile" class="right">
+            <a href="index.html" class="brand-logo left"
+                style="text-align:left; font-size: 40px; left:0.5rem;">TIGERDEV</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li>
-                    <a class='dropdown-trigger btn blue-grey darken-4' href='#' style="font-size: 24px;" data-target='DDabout'>About us</a>
+                    <a class='dropdown-trigger btn blue-grey darken-4' href='about-us.html' style="font-size: 24px;"
+                        data-target='DDabout'>About us</a>
                     <ul id='DDabout' class='dropdown-content'>
-                        <li><a class="black-text" style="font-size: 10px;" href="about-us.html" >Who we are</a></li>
+                        <li><a class="black-text" style="font-size: 10px;" href="about-us.html">Who we are</a></li>
                         <li><a class="black-text" style="font-size: 10px;" href="#">Contact Us</a></li>
                         <li><a class="black-text" style="font-size: 10px;" href="#">Alumni Stories</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a class='dropdown-trigger btn blue-grey darken-4' href='#' style="font-size: 24px;" data-target='DDprojects'>Projects</a>
+                    <a class='dropdown-trigger btn blue-grey darken-4' href='projects.html' style="font-size: 24px;"
+                        data-target='DDprojects'>Projects</a>
                     <ul id='DDprojects' class='dropdown-content' style="font-size: 8px;">
                         <li><a class="black-text" style="font-size: 10px;" href="projects.html">Past Projects</a></li>
                         <li><a class="black-text" style="font-size: 10px;" href="projects.html">Current Projects</a></li>
@@ -21,7 +25,8 @@
                     </ul>
                 </li>
                 <li>
-                    <a class='dropdown-trigger btn blue-grey darken-4' href='#' style="font-size: 24px;" data-target='DDinvolved'>Get Involved</a>
+                    <a class='dropdown-trigger btn blue-grey darken-4' href='calendar.html' style="font-size: 24px;"
+                        data-target='DDinvolved'>Get Involved</a>
                     <ul id='DDinvolved' class='dropdown-content'>
                         <li><a class="black-text" style="font-size: 10px;" href="calendar.html">Calendar & Events</a></li>
                         <li><a class="black-text" style="font-size: 10px;" href="#" style=>Join Us</a></li>
@@ -32,6 +37,19 @@
         </div>
     </nav>
 </div>
+<ul class="sidenav" id="mobile-demo">
+    <li><a class="black-text" href="about-us.html">Who we are</a></li>
+    <li><a class="black-text" href="#">Contact Us</a></li>
+    <li><a class="black-text" href="#">Alumni Stories</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="black-text" href="projects.html">Past Projects</a></li>
+    <li><a class="black-text" href="projects.html">Current Projects</a></li>
+    <li><a class="black-text" href="#">Playable Projects</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="black-text" href="calendar.html">Calendar & Events</a></li>
+    <li><a class="black-text" href="#" style=>Join Us</a></li>
+    <li><a class="black-text" href="#">Club Resources</a></li>
+</ul>
 
 
 
@@ -45,4 +63,11 @@
         'inDuration': 300,
         'outDuration': 225,
     });
+
+    //Initialize sidebar nav for mobile
+    $(document).ready(function(){
+    $('.sidenav').sidenav({
+        'edge': 'right',
+    });
+  });
 </script>
