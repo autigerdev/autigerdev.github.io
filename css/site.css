@@ -50,6 +50,13 @@ h3 {
   clip-path: polygon(45% 0, 50% 100%, 70% 0);
 }
 
+.brand-logo {
+  transition: 0.4s filter ease-out;
+}
+.brand-logo:hover {
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.199));
+}
+
 .main_title {
   font-size: 90pt;
   letter-spacing: 5px;
