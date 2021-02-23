@@ -98,3 +98,10 @@ h3 {
   margin-left: 75px;
   margin-right: 75px;
 }
+
+@media (max-width: 1200px) {
+  .calendar {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
