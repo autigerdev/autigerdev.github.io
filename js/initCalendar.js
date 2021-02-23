@@ -5,8 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
       initialView: 'dayGridMonth',
-      aspectRatio: 5,
-      height: 800,
+      aspectRatio: 2.5,
       googleCalendarApiKey: 'AIzaSyA3uX2Qdh5m67ho8ELTdTtdwLENIZ_0SIM',
       eventSources: [
         {
