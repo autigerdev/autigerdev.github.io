@@ -66,27 +66,6 @@ h3 {
   padding: 30px;
 }
 
-.project-description {
-  margin-top: 10px;
-  color: white;
-  font-size: 15pt;
-  line-height: 1.5em;
-}
-
-.project-title {
-  color: orange;
-  font-size: 22pt;
-  text-transform: uppercase;
-}
-
-.project-image {
-  margin-left: 50px;
-}
-
-.project-image img {
-  margin-bottom: 10px;
-}
-
 .officer-name {
   color: orange;
   font-size: 22pt;
@@ -99,9 +78,19 @@ h3 {
   margin-right: 75px;
 }
 
+.card {
+  width: 32%;
+  display:inline-block;
+  vertical-align: top;
+}
+
 @media (max-width: 600px) {
   .calendar {
     margin-left: 25px;
     margin-right: 25px;
+  }
+
+  .card {
+    width: 100%;
   }
 }
