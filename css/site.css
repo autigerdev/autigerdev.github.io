@@ -82,6 +82,8 @@ h3 {
   width: 32%;
   display:inline-block;
   vertical-align: top;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 @media (max-width: 600px) {
