@@ -8,16 +8,21 @@
                 </a>
             </div>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons black-text">menu</i></a>
+
+            <!-- Navbar Items-->
             <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <!-- About Us -->
                 <li>
                     <a class='dropdown-trigger btn' href='about-us.html' style="font-size: 24px; background-color: #222222;"
                         data-target='DDabout'>About us</a>
                     <ul id='DDabout' class='dropdown-content'>
                         <li><a class="black-text" style="font-size: 10px;" href="about-us.html">Who we are</a></li>
-                        <li><a class="black-text" style="font-size: 10px;" href="#">Contact Us</a></li>
-                        <li><a class="black-text" style="font-size: 10px;" href="#">Alumni Stories</a></li>
+                        <li><a class="black-text" style="font-size: 10px;" href="about-us.html#contact-us">Contact Us</a></li>
+                        <li><a class="black-text" style="font-size: 10px;" href="alumni-stories.html">Alumni Stories</a></li>
                     </ul>
                 </li>
+
+                <!-- Projects -->
                 <li>
                     <a class='dropdown-trigger btn' href='projects.html' style="font-size: 24px; background-color: #222222;"
                         data-target='DDprojects'>Projects</a>
@@ -27,19 +32,23 @@
                         <li><a class="black-text" style="font-size: 10px;" href="#">Playable Projects</a></li>
                     </ul>
                 </li>
+
+                <!-- Get Involved -->
                 <li>
                     <a class='dropdown-trigger btn' href='calendar.html' style="font-size: 24px; background-color: #222222;"
                         data-target='DDinvolved'>Get Involved</a>
                     <ul id='DDinvolved' class='dropdown-content'>
                         <li><a class="black-text" style="font-size: 10px;" href="calendar.html">Calendar & Events</a></li>
-                        <li><a class="black-text" style="font-size: 10px;" href="#" style=>Join Us</a></li>
-                        <li><a class="black-text" style="font-size: 10px;" href="#">Club Resources</a></li>
+                        <li><a class="black-text" style="font-size: 10px;" href="join-us.html" style=>Join Us</a></li>
+                        <li><a class="black-text" style="font-size: 10px;" href="club-resources.html">Club Resources</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </nav>
 </div>
+
+<!-- Mobile -->
 <ul class="sidenav" id="mobile-demo">
     <li><a class="black-text" href="about-us.html">Who we are</a></li>
     <li><a class="black-text" href="#">Contact Us</a></li>
@@ -54,8 +63,7 @@
     <li><a class="black-text" href="#">Club Resources</a></li>
 </ul>
 
-
-
+<!-- Initialize Menus -->
 <script type="text/javascript">
     //Initialize dropdowns with options
     $('.dropdown-trigger').dropdown({

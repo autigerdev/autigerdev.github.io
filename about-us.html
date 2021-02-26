@@ -1,146 +1,145 @@
 <!DOCTYPE html>
 <html>
+  <!-- For imports and site info -->
+  <head>
+    <!-- Title & Favicon -->
+    <title>TigerDev - About Us</title>
+    <link rel="icon" href="images/Favicon.png">
 
-<head>
-  <!-- Title & Favicon -->
-  <title>TigerDev - About Us</title>
-  <link rel="icon" href="images/Favicon.png">
+    <!-- Imports -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="css/materialize.css">
+    <script src="js/materialize.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- Imports -->
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <link rel="stylesheet" href="css/materialize.css">
-  <script src="js/materialize.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- References -->
+    <script src="js/app.js" type="text/javascript"></script>
+    <link href="css/site.css" rel="stylesheet" type="text/css">
+    <link href="css/navbar-styling.css" rel="stylesheet" type="text/css">
 
-  <!-- References -->
-  <script src="js/app.js" type="text/javascript"></script>
-  <link href="css/site.css" rel="stylesheet" type="text/css">
-  <link href="css/navbar-styling.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+  <!-- Body -->
+  <body>
+    <!-- Import Navigation Bar -->
+    <div id="navbar"></div>
 
-<body>
-  <!-- Import Navigation Bar -->
-  <div id="navbar"></div>
+    <!-- Text container -->
+    <div class="container white-text">
 
-  <div class="container white-text">
+      <!-- Description -->
+      <h3 style="font-weight: bold;">What is TigerDev?</h3>
+      <div>
+        <p class="flow-text">
+          TigerDev is Auburn’s Video Game Development club. TigerDev was founded in 2015 with the goal
+          to provide a community atmosphere focused around breaking down the barrier between technical skill and your
+          imagination.
+        </p>
 
-    <h3 style="font-weight: bold;">What is TigerDev?</h3>
-    <div>
-      <p class="flow-text">
-        TigerDev is Auburn’s Video Game Development club. TigerDev was founded in 2015 with the goal
-        to provide a community atmosphere focused around breaking down the barrier between technical skill and your
-        imagination.
-      </p>
-
-      <h3 style="font-weight: bold;">What Do We Do?</h3>
-      <ul class="flow-text" style="text-align: left;line-height: 1.5em;">
-        <li>Every week we meet to show off our recent work, discuss design philosophy / technique, or to discuss our
-          game of the month (similar to a book club).</li>
-        <li>Every semester we form interdisciplinary teams that come together to create fully working games over the
-          course of the semester.</li>
-        <li>Multiple times a semester we come together for Game Jams. If you don’t know, game jams are events (like
-          “hackathons”) in which you develop a brand new game during the length of the jam (usually 48 hours). At the
-          beginning of the jam we meet somewhere for the unveiling of the theme and to form groups.
-          At which point you are welcome to stick around and work on your game or go off on your own. We generally have
-          reserved classrooms and free food available for all participants!</li>
-      </ul>
-      <h3 style="font-weight: bold;">Where Do We Meet?</h3>
-      <p class="flow-text">Monday @6pm - https://auburn.zoom.us/j/7362449428</p>
-
-      <h3 style="font-weight: bold;">How Do I Contact You?</h3>
-      <ul class="flow-text">
-        <li>Email: auTigerDev@gmail.com</li>
-        <li>Discord: TigerDev#3018</li>
-        <li>Twitter: @Auburn_TigerDev</li>
-        <li>Instagram: @Auburn_TigerDev</li>
-      </ul>
-    </div>
-
-
-
-
-
-    <h3 class="white-text" style="font-weight: bold;">Officers</h3>
-
-    <div class="divider"></div>
-
-    <div class="row">
-      <div class="col m12 l8 flow-text left-align">
-        <div class="officer-name">President - Connor Lantz</div>
-        <div>Connor Lantz is a game designer specializing in tech art. Born in Texas and now studying computer science,
-          he's led a handful of projects over three years of experience.
-          He has worked in every major game engine, in a plethora of developmental roles. Outside of game development,
-          Connor plays French horn in the college band and is a member of the Tau Beta Sigma service sorority.
-        </div>
+        <h3 style="font-weight: bold;">What Do We Do?</h3>
+        <ul class="flow-text" style="text-align: left;line-height: 1.5em;">
+          <li>Every week we meet to show off our recent work, discuss design philosophy / technique, or to discuss our
+            game of the month (similar to a book club).</li>
+          <li>Every semester we form interdisciplinary teams that come together to create fully working games over the
+            course of the semester.</li>
+          <li>Multiple times a semester we come together for Game Jams. If you don’t know, game jams are events (like
+            “hackathons”) in which you develop a brand new game during the length of the jam (usually 48 hours). At the
+            beginning of the jam we meet somewhere for the unveiling of the theme and to form groups.
+            At which point you are welcome to stick around and work on your game or go off on your own. We generally have
+            reserved classrooms and free food available for all participants!</li>
+        </ul>
+        <h3 style="font-weight: bold;">Where Do We Meet?</h3>
+        <p class="flow-text">Monday @6pm - <a href="https://auburn.zoom.us/j/7362449428">Zoom Link</a></p>
+        
+        <!-- Contact Info -->
+        <h3 style="font-weight: bold;" id="contact-us">How Do I Contact You?</h3>
+        <ul class="flow-text">
+          <li>Email: auTigerDev@gmail.com</li>
+          <li>Discord: TigerDev#3018</li>
+          <li>Twitter: @Auburn_TigerDev</li>
+          <li>Instagram: @Auburn_TigerDev</li>
+        </ul>
       </div>
-      <div class="col m12 l4"><img src="images/connor_lantz.jpg" /></div>
-    </div>
 
-    <div class="divider"></div>
 
-    <div class="row">
-      <div class="col m12 l8 flow-text left-align">
-        <div class="officer-name">Vice President - Ezra Hill</div>
-        <div>
+      <h3 class="white-text" style="font-weight: bold;">Officers</h3>
+
+      <div class="divider"></div>
+
+      <div class="row">
+        <div class="col m12 l8 flow-text left-align">
+          <div class="officer-name">President - Connor Lantz</div>
+          <div>Connor Lantz is a game designer specializing in tech art. Born in Texas and now studying computer science,
+            he's led a handful of projects over three years of experience.
+            He has worked in every major game engine, in a plethora of developmental roles. Outside of game development,
+            Connor plays French horn in the college band and is a member of the Tau Beta Sigma service sorority.
+          </div>
         </div>
+        <div class="col m12 l4"><img src="images/connor_lantz.jpg" /></div>
       </div>
-      <div class="col m12 l4"><img src="images/person-placeholder.png" /></div>
-    </div>
 
-    <div class="divider"></div>
+      <div class="divider"></div>
 
-    <div class="row">
-      <div class="col m12 l8 flow-text left-align">
-        <div class="officer-name">Secretary - Harper Rhett</div>
-        <div>Harper Rhett is an aspiring game designer and programmer, born and raised in
-          Atlanta, Georgia. From his engineering roots in high school robotics, to someday hoping to join the game
-          development industry, Harper can often be found creating things. Some examples may be participating in game
-          jams, leading some sort of development project, and working with creators from around the world. In the few
-          moments when he's not creating games however, Harper enjoys ultimate frisbee, going to the theaters, and
-          hiking.
+      <div class="row">
+        <div class="col m12 l8 flow-text left-align">
+          <div class="officer-name">Vice President - Ezra Hill</div>
+          <div>
+          </div>
         </div>
+        <div class="col m12 l4"><img src="images/person-placeholder.png" /></div>
       </div>
-      <div class="col m12 l4"><img src="images/harper_rhett.jpg" /></div>
-    </div>
 
-    <div class="divider"></div>
+      <div class="divider"></div>
 
-    <div class="row">
-      <div class="col m12 l8 flow-text left-align">
-        <div class="officer-name">Treasurer - Eli Canup</div>
-        <div>
+      <div class="row">
+        <div class="col m12 l8 flow-text left-align">
+          <div class="officer-name">Secretary - Harper Rhett</div>
+          <div>Harper Rhett is an aspiring game designer and programmer, born and raised in
+            Atlanta, Georgia. From his engineering roots in high school robotics, to someday hoping to join the game
+            development industry, Harper can often be found creating things. Some examples may be participating in game
+            jams, leading some sort of development project, and working with creators from around the world. In the few
+            moments when he's not creating games however, Harper enjoys ultimate frisbee, going to the theaters, and
+            hiking.
+          </div>
         </div>
+        <div class="col m12 l4"><img src="images/harper_rhett.jpg" /></div>
       </div>
-      <div class="col m12 l4"><img src="images/person-placeholder.png" /></div>
-    </div>
 
-    <div class="divider"></div>
+      <div class="divider"></div>
 
-    <div class="row">
-      <div class="col m12 l8 flow-text left-align">
-        <div class="officer-name">Historian - Jean Gannett</div>
-        <div>Jean Gannett is a digital illustrator, animator, and concept artist. She
-          graduates from Auburn University in May of 2021 with a Bachelor of Arts in Studio Art. She also works two
-          jobs, one being an Education Assistant at Auburn's art museum, Jule Collins Smith Museum.<br>Jean has made art
-          for many projects over her past three years at TigerDev, including but not limited to pixel art, digital
-          paintings, and 3D assets. She was also the project leader for The Primaries. She plans on going into the art
-          side of game development and/or animation after college.
-          <br><br>Check out her portfolio here: <a
-            href="https://www.artstation.com/jeanmariegannett">www.artstation.com/jeanmariegannett</a>
+      <div class="row">
+        <div class="col m12 l8 flow-text left-align">
+          <div class="officer-name">Treasurer - Eli Canup</div>
+          <div>
+          </div>
         </div>
+        <div class="col m12 l4"><img src="images/person-placeholder.png" /></div>
       </div>
-      <div class="col m12 l4"><img src="images/jean_gannett.png" /></div>
+
+      <div class="divider"></div>
+
+      <div class="row">
+        <div class="col m12 l8 flow-text left-align">
+          <div class="officer-name">Historian - Jean Gannett</div>
+          <div>Jean Gannett is a digital illustrator, animator, and concept artist. She
+            graduates from Auburn University in May of 2021 with a Bachelor of Arts in Studio Art. She also works two
+            jobs, one being an Education Assistant at Auburn's art museum, Jule Collins Smith Museum.<br>Jean has made art
+            for many projects over her past three years at TigerDev, including but not limited to pixel art, digital
+            paintings, and 3D assets. She was also the project leader for The Primaries. She plans on going into the art
+            side of game development and/or animation after college.
+            <br><br>Check out her portfolio here: <a
+              href="https://www.artstation.com/jeanmariegannett">www.artstation.com/jeanmariegannett</a>
+          </div>
+        </div>
+        <div class="col m12 l4"><img src="images/jean_gannett.png" /></div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Import Footer -->
+      <div id="footer"></div>
+
     </div>
-
-    <div class="divider"></div>
-
-    <!-- Import Footer -->
-    <div id="footer"></div>
-
-  </div>
-
-</body>
-
+  </body>
 </html>
