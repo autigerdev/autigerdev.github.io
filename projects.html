@@ -31,7 +31,7 @@
       some games developed here at TigerDev!</div>
 
     <!-- Filter system input -->
-    <div class="chips chips-autocomplete"></div>
+    <div id="tags" class="chips chips-autocomplete"></div>
 
     <!-- Projects will be injected here -->
     <div id="projects"></div>
@@ -70,19 +70,24 @@
           },
           limit: Infinity,
           minLength: 1
-        }
+        },
+        onChipAdd: search,
+        onChipDelete: search,
       });
     });
 
     function processData(data) {
+      //Convert our string of csv data to a usable format
       var projects = $.csv.toObjects(data);
+
       var projectHTML = [];
       for(var i = 0; i<projects.length; i++) {
         console.log(projects[i]);
         //For each project, push a new string of HTML to be inserted
         //PROJECT CARD TEMPLATE:
         projectHTML.push(
-          `<div class="card sticky-action">
+          `<div id="projectcard" class="card sticky-action">
+            <div style="display:none;">` + projects[i].tags + `</div>
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" style="object-fit:cover; height:230px; width:100%;" id="Pimage" src="images/` + projects[i].image + `">
             </div>
@@ -101,7 +106,35 @@
             </div>
           </div>`);
       }
+      //Insert our new HTML
       $("#projects").html(projectHTML.join(""));
+    }
+
+    function search() {
+      //Get chip data object
+      var tags = M.Chips.getInstance(document.getElementById("tags")).chipsData;
+      console.log(tags);
+
+      //It's time to get funky
+      //Start by toggling all in case there are no tags
+      var toggleAll = "";
+        $("#projects #projectcard").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(toggleAll) > -1);
+        });
+
+      //Loop through each tag in our chip data
+      //Filter through content inside projects div
+      //Toggle (display:none/default;) depending on whether there's a match or not
+      for(var i = 0; i<tags.length; i++) {
+        var tag = tags[0].tag.toLowerCase();
+        $("#projects #projectcard").filter(function() {
+          $(this).toggle($(this).children().text().toLowerCase().indexOf(tag) > -1);
+        });
+      }
+
+      if (tags[0] != null) {
+        
+      }
     }
   </script>
 
