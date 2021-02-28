@@ -54,22 +54,24 @@
       $('.materialboxed').materialbox();
 
       $('.chips-autocomplete').chips({
-        placeholder: 'Enter a filter',
+        placeholder: 'Search...',
         secondaryPlaceholder: '+Filter',
         autocompleteOptions: {
           data: {
-            '2016': null,
-            '2017': null,
-            '2018': null,
-            '2019': null,
-            '2020': null,
-            'Fall': null,
-            'Spring': null,
-            'Semester Project': null,
-            'Game Jam Submission': null,
+            'fall2016': null,
+            'spring2017': null,
+            'fall2017': null,
+            'spring2018': null,
+            'fall2018': null,
+            'spring2019': null,
+            'fall2019': null,
+            'spring2020': null,
+            'fall2020': null,
+            'Semester-Project': null,
+            'Game-Jam': null,
           },
           limit: Infinity,
-          minLength: 1
+          minLength: 0
         },
         onChipAdd: search,
         onChipDelete: search,
