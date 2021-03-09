@@ -32,6 +32,12 @@
     border-spacing: 0;
     font-size: 1em; /* normalize cross-browser */
   }
+
+  @media (max-width: 1000px) {
+    .fc table {
+      font-size: 0.65em;
+    }
+  }
 .fc th {
     text-align: center;
   }
