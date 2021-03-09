@@ -46,12 +46,25 @@
 
 <!-- Script for accessing page with password -->
 <script>
-    form.addEventListener('submit', logIn)
-    
-    function logIn(event) {
-        var passwordIn = document.getElementById("password").value;
+    // Initialize
+    var password = "TigerDev rocks!";
+    var myForm = form;
 
-        if (passwordIn == "test") {
+    // Check if password has already been entered, if not, check for entry of submit button
+    if (localStorage.getItem('password') == password) {
+        $("#page-content").load("unlocked-resources.html");
+    } else {
+        myForm.addEventListener('submit', logIn);
+    }
+
+    // Activates when submit button is pressed
+    function logIn(event) {
+        // Get password and store it locally
+        var passwordIn = document.getElementById("password").value;
+        localStorage.setItem('password', passwordIn);
+
+        // Check if password is right and load page
+        if (passwordIn == password) {
             $("#page-content").load("unlocked-resources.html");
         }
     }
