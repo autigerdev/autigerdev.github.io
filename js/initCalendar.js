@@ -7,7 +7,7 @@ var ratio = 2.5;
 var view = 'dayGridMonth';
 
 // Change ratio for mobile
-if (screen.width <= 600) {
+if (window.screen.width <= 1000) {
   ratio = 0.75;
 }
 
