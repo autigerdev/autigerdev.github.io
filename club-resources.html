@@ -15,7 +15,6 @@
         <!-- References -->
         <script src="js/app.js" type="text/javascript"></script>
         <link href="css/site.css" rel="stylesheet" type="text/css">
-        <link href="css/navbar-styling.css" rel="stylesheet" type="text/css">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -26,15 +25,18 @@
         <div id="navbar"></div>
 
         <!-- Text container -->
-        <div class="container white-text">
+        <div class="container white-text" id="page-content">
             <!-- Title -->
-            <h3 style="font-weight: bold;">Resources</h3>
+            <h3 style="font-weight: bold;">Unlock Resources</h3>
 
             <!-- Input for password -->
-            <div class="input-field">
-                <input id="password" type="password" class="validate">
-                <label for="password">Password to Access Page</label>
-            </div>
+            <form id="form">
+                <div class="input-field">
+                    <label for="password">Password to Access Page</label>
+                    <input id="password" type="password" class="validate" style="color: white">
+                    <input type="submit" class="btn waves-effect waves-light">
+                </div>
+            </form>
         </div>
 
         <!-- Import Footer -->
@@ -44,5 +46,13 @@
 
 <!-- Script for accessing page with password -->
 <script>
-    var passwordIn = document.getElementById("password").value;
+    form.addEventListener('submit', logIn)
+    
+    function logIn(event) {
+        var passwordIn = document.getElementById("password").value;
+
+        if (passwordIn == "test") {
+            $("#page-content").load("unlocked-resources.html");
+        }
+    }
 </script>
