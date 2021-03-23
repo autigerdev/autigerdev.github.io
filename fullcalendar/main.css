@@ -582,15 +582,15 @@ A HORIZONTAL event
 */
 .fc-h-event { /* allowed to be top-level */
   display: block;
-  border: 1px solid #3788d8;
-  border: 1px solid var(--fc-event-border-color, #3788d8);
-  background-color: #3788d8;
-  background-color: var(--fc-event-bg-color, #3788d8)
+  border: 1px solid #000000;
+  border: 1px solid var(--fc-event-border-color, #000000);
+  background-color: #000000;
+  background-color: var(--fc-event-bg-color, #000000)
 
 }
 .fc-h-event .fc-event-main {
-    color: #fff;
-    color: var(--fc-event-text-color, #fff);
+    color: #ffffff;
+    color: var(--fc-event-text-color, #ffffff);
   }
 .fc-h-event .fc-event-main-frame {
     display: flex; /* for make fc-event-title-container expand */
@@ -903,10 +903,11 @@ A HORIZONTAL event
     min-width: 0; /* important for allowing to shrink all the way */
     overflow: hidden;
     font-weight: bold;
+    color:white !important;
   }
 .fc-daygrid-dot-event:hover,
   .fc-daygrid-dot-event.fc-event-mirror {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.4);
   }
 .fc-daygrid-dot-event.fc-event-selected:before {
     /* expand hit area */
