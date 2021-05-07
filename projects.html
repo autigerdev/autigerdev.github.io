@@ -44,6 +44,8 @@
 
   <script>
     $(document).ready(function () {
+
+      //Load in project data
       $.ajax({
         type: "GET",
         url: "projects.csv",
@@ -53,7 +55,8 @@
 
       $('.materialboxed').materialbox();
 
-      $('.chips-autocomplete').chips({
+      //Search bar setup
+      chips = $('.chips-autocomplete').chips({
         placeholder: 'Search...',
         secondaryPlaceholder: '+Filter',
         autocompleteOptions: {
@@ -67,6 +70,8 @@
             'fall2019': null,
             'spring2020': null,
             'fall2020': null,
+            'spring2021': null,
+            'fall2021': null,
             'Semester-Project': null,
             'Game-Jam': null,
           },
@@ -76,6 +81,15 @@
         onChipAdd: search,
         onChipDelete: search,
       });
+
+      //Get url parameters, and insert chip if we have a tag in the url
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      var urlTag = urlParams.get('tag0');
+      if (urlTag) {
+        M.Chips.getInstance($('.chips-autocomplete')).addChip({tag:urlTag});
+        search();
+      }
     });
 
     function processData(data) {
