@@ -2,5 +2,5 @@
 $(function() {
   $("#navbar").load("navbar.html");
   $("#footer").load("footer.html");
-  $("#imports".load("imports.html"))
+  $("#imports").load("imports.html");
 });
